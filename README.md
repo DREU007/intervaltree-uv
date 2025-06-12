@@ -1,5 +1,7 @@
 [![Build status badge][]][build status]
 
+
+
 intervaltree
 ============
 
@@ -16,11 +18,26 @@ This library was designed to allow tagging text and time intervals, where the in
 * The `extend(items)` method no longer exists. Instead, use `update(items)`.
 * Methods like `merge_overlaps()` which took a `strict` argument consistently default to `strict=True`. Before, some methods defaulted to `True` and others to `False`.
 
-Installing
-----------
+Installing (UV)
+---------------
+
+Add inside uv `pyproject.toml`
+```
+dependencies = [
+    "intervaltree",
+]
+
+[tool.uv.sources]
+intervaltree = { git = "https://github.com/DREU007/intervaltree-uv.git" }
+```
 
 ```sh
-pip install intervaltree
+uv sync
+```
+
+Use imports as usual
+```python
+from intervaltree import Interval, IntervalTree
 ```
 
 Features

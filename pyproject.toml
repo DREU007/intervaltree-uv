@@ -1,5 +1,5 @@
 [project]
-name = "intervaltree-uv"
+name = "intervaltree"
 version = "0.1.0"
 description = "Same intervaltree but with uv lib."
 readme = "README.md"
