@@ -1,0 +1,14 @@
+[project]
+name = "intervaltree-uv"
+version = "0.1.0"
+description = "Same intervaltree but with uv lib."
+readme = "README.md"
+authors = [
+    { name = "Denis Bolshakov", email = "dreu007@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
